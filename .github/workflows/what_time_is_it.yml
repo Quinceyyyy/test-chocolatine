@@ -1,0 +1,10 @@
+name: PrintDate
+
+on:
+  push:
+
+jobs:
+  print-date:
+    steps:
+      - name: Prints date
+        run: data
