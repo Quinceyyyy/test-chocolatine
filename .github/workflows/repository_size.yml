@@ -1,0 +1,20 @@
+name: Task04
+
+on:
+  push:
+
+jobs:
+  task04:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout test
+        uses: actions/checkout@v4
+        with:
+          path: main
+      
+      - name: Checkout Task04
+        uses: actions/checkout@v4
+        with:
+          path: main
+          run: echo "name"
+          run: du -skh --exclude=".git"
