@@ -17,4 +17,5 @@ jobs:
         with:
           path: main
           run: echo "name"
-          run: du -skh --exclude=".git"
+      - name: 2nd run
+        run: du -skh --exclude=".git"
