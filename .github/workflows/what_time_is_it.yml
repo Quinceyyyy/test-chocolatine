@@ -5,6 +5,7 @@ on:
 
 jobs:
   print-date:
+    run-ons: ubuntu-latest
     steps:
       - name: Prints date
-        run: data
+        run: date
